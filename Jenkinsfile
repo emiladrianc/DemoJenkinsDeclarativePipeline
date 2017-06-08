@@ -43,4 +43,18 @@ pipeline {
             }
         }
     }
+	
+	post {
+		always {
+			echo 'Always....'
+		}
+		
+		success{
+			echo 'Succes....'
+		}
+		
+		failure {
+			echo 'Failure....'
+		}
+	}
 }
